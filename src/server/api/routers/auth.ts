@@ -5,13 +5,14 @@ import {
 } from "@/server/api/trpc";
 import { DrizzleError } from "drizzle-orm";
 import { ZodError } from "zod";
+import { env } from "../../../env";
 import { TRPCReturnObject } from "../../../lib/classes";
 import { userUpdateSchema } from "../../../validations/user-validations";
 import { updateUser } from "../../queries/user-queries";
 
 export const authRouter = createTRPCRouter({
   getCsrf: publicProcedure.query(async () => {
-    const response = await fetch(process.env.BASE_URL + "/api/auth/csrf");
+    const response = await fetch(env.BASE_URL + "/api/auth/csrf");
     const data = (await response.json()) as { csrfToken: string };
     return data;
   }),

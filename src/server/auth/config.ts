@@ -10,6 +10,7 @@ import { type DefaultSession, type NextAuthConfig } from "next-auth";
 import Nodemailer from "next-auth/providers/nodemailer";
 import { createTransport } from "nodemailer";
 import { siteConfig } from "../../config/site";
+import { env } from "../../env";
 
 /**
  * Module augmentation for `next-auth` types. Allows us to add custom properties to the `session`
@@ -57,8 +58,8 @@ export const authConfig = {
   },
   providers: [
     Nodemailer({
-      server: process.env.EMAIL_SERVER!,
-      from: process.env.EMAIL_FROM!,
+      server: env.EMAIL_SERVER,
+      from: env.EMAIL_FROM,
 
       sendVerificationRequest: async ({ identifier: email, url, provider }) => {
         // const dbUser = await getUserByEmail(email);

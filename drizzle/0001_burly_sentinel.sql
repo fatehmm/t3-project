@@ -1,1 +1,0 @@
-ALTER TABLE "t3-project_user" ALTER COLUMN "image" SET DATA TYPE text;
