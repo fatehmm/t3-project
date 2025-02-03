@@ -13,6 +13,18 @@ export const siteConfig = {
   ogImage: "https://skateshop.sadmn.com/opengraph-image.png",
   author: "Fateh Mammadli",
   address: "Baku, Azerbaijan",
+  userButtonNav: [
+    {
+      order: 2,
+      name: "Settings",
+      url: "/dashboard/settings",
+    },
+    {
+      order: 1,
+      name: "Profile",
+      url: "/dashboard/profile",
+    },
+  ],
   companyName: "Fateh's Organization Inc.",
   links,
   footerNav: [
