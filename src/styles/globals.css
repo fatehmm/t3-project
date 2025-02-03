@@ -82,3 +82,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* My own styles */
+.debug {
+  @apply border-4 border-dashed border-red-600;
+}

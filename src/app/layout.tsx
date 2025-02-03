@@ -23,7 +23,7 @@ export default async function RootLayout({
     <SessionProvider session={session}>
       <html
         lang="en"
-        className={`${GeistSans.variable} selection:bg-primary selection:text-primary-foreground`}
+        className={`${GeistSans.variable} bg-gradient-to-b from-white via-slate-100 to-slate-200 selection:bg-primary selection:text-primary-foreground`}
       >
         <body>
           <TRPCReactProvider>{children}</TRPCReactProvider>

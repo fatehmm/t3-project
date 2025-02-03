@@ -13,6 +13,14 @@ export const siteConfig = {
   ogImage: "https://skateshop.sadmn.com/opengraph-image.png",
   author: "Fateh Mammadli",
   address: "Baku, Azerbaijan",
+  home: {
+    homeTitle: "Title value about the product.",
+    description: "Description about the product and the process / workflow.",
+    ctaButton: {
+      name: "Start",
+      url: "/login",
+    },
+  },
   userButtonNav: [
     {
       order: 2,

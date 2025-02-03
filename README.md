@@ -7,3 +7,4 @@ This is a template for my side projects to start right on.
 1. Run `cp .env.example .env`
 2. Input the environment variables.
 3. Run `pnpm db:prepare`
+4. Update `/src/config/site.ts`

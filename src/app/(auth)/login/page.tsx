@@ -12,7 +12,10 @@ import { Shell } from "../../../components/shell";
 export default function LoginPage() {
   return (
     <>
-      <Shell className="flex h-screen items-center justify-center">
+      <Shell
+        variant={"sidebar"}
+        className="flex h-screen !w-screen items-center justify-center"
+      >
         <Card className="w-[400px]">
           <CardHeader>
             <CardTitle className="text-3xl">Login</CardTitle>
